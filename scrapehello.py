@@ -59,8 +59,8 @@ print(img_tag['src'])
 print('------')
 
 print('Goodbye list items:')
-all_goodbye_list_items = soup.find_all('li', class_='goodbye')
-for li in all_goodbye_list_items:
+goodbye_list_items = all_goodbye_elements[0].find_all('li')
+for li in goodbye_list_items:
   print(li.string)
 print('------')
 
